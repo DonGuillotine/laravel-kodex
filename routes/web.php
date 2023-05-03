@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+// Routing to return a response
 Route::get('/hello', function(){
     return response('<h1>Hello World</h1>', 404)->header('Content-Type', 'text/plain');
 });
