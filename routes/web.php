@@ -25,5 +25,5 @@ Route::get('/hello', function(){
 
 // Routing: Wildcard Expressions
 Route::get('/posts/{id}', function($id){
-    return response('Post number ' . $id)->where('id', '[0-9]');
-}); 
+    return response('Post number ' . $id);
+})->where('id', '[0-9]'); 
