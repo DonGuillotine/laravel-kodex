@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('job', [
+        'heading' => 'Latest Jobs',
+    ]); 
 });
 
 // Routing: to return a response
@@ -29,6 +31,7 @@ Route::get('/posts/{id}', function($id){
     ddd($id);
     return response('Post number ' . $id);
 })->where('id', '[0-9]'); 
+
 
 // Routing: Testing Search Params
 Route::get('/search', function(Request $request){
