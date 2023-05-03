@@ -25,5 +25,6 @@ Route::get('/hello', function(){
 
 // Routing: Wildcard Expressions
 Route::get('/posts/{id}', function($id){
+    ddd($id);
     return response('Post number ' . $id);
 })->where('id', '[0-9]'); 
