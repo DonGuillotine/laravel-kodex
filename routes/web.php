@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\Jobs;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('job', [
         'heading' => 'Latest Jobs',
-        'jobs' => 
+        'jobs' => Jobs::all()
     ]); 
 });
 
