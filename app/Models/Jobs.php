@@ -25,11 +25,11 @@ class Jobs{
     }
 
     public static function find($id){
-        $jobs = self::all();
+        $one_job = self::all();
 
-        foreach($jobs as $job){
-            if($job['id'] == $id){
-                return $job;
+        foreach($one_job as $hired){
+            if($hired['id'] == $id){
+                return $hired;
             }
         }
     }
