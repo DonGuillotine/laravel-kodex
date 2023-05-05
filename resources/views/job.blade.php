@@ -12,7 +12,7 @@
 
 
 @foreach($jobs as $job)
-    <h2>{{ $job['title'] }}</h2>
+    <h2><a href="/single_job/{{ $job['id'] }}">{{ $job['title'] }}</a></h2>
     <p>{{ $job['description'] }}</p>
     <b>{{ $hello }}</b>
 @endforeach

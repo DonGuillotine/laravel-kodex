@@ -15,12 +15,22 @@ use App\Models\Jobs;
 |
 */
 
+
+// Display All Jobs
 Route::get('/', function () {
     return view('job', [
         'heading' => 'Latest Jobs',
         'jobs' => Jobs::all()
     ]); 
 });
+
+// Display A Single Job
+Route::get('/single_job/{id}', function($id){
+    return view('single_job', [
+        'single_job' => Jobs::find($id)
+    ]);
+});
+
 
 // Routing: to return a response
 Route::get('/hello', function(){
