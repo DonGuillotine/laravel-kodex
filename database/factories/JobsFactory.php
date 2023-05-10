@@ -23,7 +23,7 @@ class JobsFactory extends Factory
             'email' => $this->faker->companyEmail(),
             'website' => $this->faker->url(),
             'location' => $this->faker->city(),
-            'description' => $this->faker->paragraph(2),
+            'description' => $this->faker->paragraph(9),
         ];
     }
 }
