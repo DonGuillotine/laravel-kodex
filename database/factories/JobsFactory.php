@@ -18,7 +18,7 @@ class JobsFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(),
-            'tags' => 'laravel, view, backend',
+            'tags' => 'laravel, view, backend, MVC',
             'company' => $this->faker->company(),
             'email' => $this->faker->companyEmail(),
             'website' => $this->faker->url(),
