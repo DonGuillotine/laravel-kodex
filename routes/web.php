@@ -40,6 +40,7 @@ Route::get('/hello', function(){
 
 // Routing: Wildcard Expressions
 Route::get('/posts/{id}', function($id){
+    // Dump die debug-> mainly for debugging
     ddd($id); 
     return response('Post number ' . $id);
 })->where('id', '[0-9]'); 
