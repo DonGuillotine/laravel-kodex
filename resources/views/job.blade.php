@@ -1,3 +1,7 @@
+@extends('layouts')
+
+
+@section('content')
 <h1>{{ $heading }}</h1>
 
 {{-- Directives --}}
@@ -16,3 +20,5 @@
     <p>{{ $job['description'] }}</p>
     <b>{{ $hello }}</b>
 @endforeach
+
+@endsection
