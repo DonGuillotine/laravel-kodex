@@ -26,7 +26,7 @@
                 <div class="row align-items-center row--0">
                     <div class="col-lg-3 col-md-6 col-4">
                         <div class="logo">
-                            <a href="index-2.html">
+                            <a href="/">
                                 <img class="logo-light" src="{{ asset('images/logo/logo.png') }}" alt="Corporate Logo">
                                 <img class="logo-dark" src="{{ asset('images/logo/logo-dark.png') }}" alt="Corporate Logo">
                             </a>
@@ -97,14 +97,8 @@
                 </ul>
             </div>
         </div>
-        {{-- INCLUDE BREADCRUMB --}}
 
-          <!-- Start Theme Style  -->
-          <div>
-            <div class="rn-gradient-circle"></div>
-            <div class="rn-gradient-circle theme-pink"></div>
-        </div>
-        <!-- End Theme Style  -->
+        
 
         @yield('content')
 

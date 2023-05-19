@@ -2,7 +2,6 @@
 
 
 @section('content')
-<h1>{{ $heading }}</h1>
 
 {{-- Directives --}}
 
@@ -13,7 +12,13 @@
 @if (count($jobs) == 0)
     <p style="color: red">No Jobs Available</p>
 @endif
-
+    @include('partials._breadcrumb')
+    <!-- Start Theme Style  -->
+    <div>
+        <div class="rn-gradient-circle"></div>
+        <div class="rn-gradient-circle theme-pink"></div>
+    </div>
+    <!-- End Theme Style  -->
 
         <!-- Start Rn Blog Area  -->
         <div class="main-content">
@@ -26,8 +31,8 @@
                                     <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700">
                                         <div class="rn-card box-card-style-default">
                                             <div class="inner">
-                                                {{-- <div class="thumbnail"><a class="image" href="blog-details.html"><img class="w-100" src="assets/images/blog-grid/blog-01.jpg" alt="Blog Image"></a>
-                                                </div> --}}
+                                                <div class="thumbnail"><a class="image" href="/single_job/{{ $job['id'] }}"><img class="w-100" src="{{ asset('images/blog-grid/blog-01.jpg') }}" alt="Blog Image"></a>
+                                                </div>
                                                 <div class="content">
                                                     <ul class="rn-meta-list">
                                                         <li><a href="#">Irin Pervin</a></li>
