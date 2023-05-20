@@ -43,7 +43,7 @@
                                 </ul>
                             </nav>
                             <!-- Start Header Btn  -->
-                            <div class="header-btn"><a class="btn-default btn-small round" target="_blank" href="/">BUY NOW</a></div>
+                            <div class="header-btn"><a class="btn-default btn-small round" href="/">BUY NOW</a></div>
                             <!-- End Header Btn  -->
 
                             <!-- Start Mobile-Menu-Bar -->
