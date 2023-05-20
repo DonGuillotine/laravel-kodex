@@ -92,8 +92,10 @@
                     </div>
                 </div>
                 <ul class="mainmenu">
+                    {{-- AUTH GOES HERE --}}
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    {{-- AUTH GOES HERE --}}
                 </ul>
             </div>
         </div>
