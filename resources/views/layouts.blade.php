@@ -144,20 +144,20 @@
                         <div class="copyright-left">
                             <ul class="ft-menu link-hover">
                                 <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
+                                    <a href="">Privacy Policy</a>
                                 </li>
                                 <li>
                                     <a href="#">Terms And Condition</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact Us</a>
+                                    <a href="">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-12 col-12">
                         <div class="copyright-right text-center text-lg-end">
-                            <p class="copyright-text">© Doob 2022</p>
+                            <p class="copyright-text">© Donald Nwokoro -- DonGuillotine</p>
                         </div>
                     </div>
                 </div>
