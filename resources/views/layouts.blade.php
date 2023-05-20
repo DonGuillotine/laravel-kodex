@@ -120,9 +120,7 @@
                                             <img class="logo-dark" src="{{ asset('images/logo/logo-dark.png') }}" alt="Corporate Logo">
                                         </a>
                                     </div>
-                                    <p class="subtitle" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">If you want to create a corporate template you can purshace now
-                                        our doob
-                                        template.</p>
+                                    <p class="subtitle" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">Stuff goes here</p>
                                 </div>
                             </div>
                         </div>
