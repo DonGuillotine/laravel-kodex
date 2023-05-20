@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/plugins/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/plugins/lightbox.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <title>Hello World</title>
+    <title>Jobberman</title>
 </head>
 <body class="active-dark-mode">
     <main class="page-wrapper">
