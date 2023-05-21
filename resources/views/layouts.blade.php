@@ -95,8 +95,8 @@
                 </div>
                 <ul class="mainmenu">
                     {{-- AUTH GOES HERE --}}
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/">Manage Jobs</a></li>
+                    <li><a href="contact.html"></a></li>
                     {{-- AUTH GOES HERE --}}
                 </ul>
             </div>
