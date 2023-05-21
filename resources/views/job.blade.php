@@ -59,12 +59,4 @@
             </div>
         </div>
         <!-- End Rn Blog Area  -->
-
-
-{{-- @foreach($jobs as $job)
-    <h2><a href="/single_job/{{ $job['id'] }}">{{ $job['title'] }}</a></h2>
-    <p>{{ $job['description'] }}</p>
-    <b>{{ $hello }}</b>
-@endforeach --}}
-
 @endsection
