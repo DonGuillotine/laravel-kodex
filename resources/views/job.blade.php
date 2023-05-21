@@ -1,13 +1,6 @@
 @extends('layouts')
 
-
 @section('content')
-
-{{-- Directives --}}
-
-@php
-    $hello = "Donald"
-@endphp
 
 @if (count($jobs) == 0)
     <p style="color: red">No Jobs Available</p>
