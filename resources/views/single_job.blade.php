@@ -1,6 +1,5 @@
 @extends('layouts')
 
-
 @section('content')
 
 <!-- Start Advance Pricing Area  -->
@@ -34,10 +33,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="content">
-
                         <p>{{ $single_job['description'] }}</p>
-                    
-
                     </div>
                 </div>
             </div>
