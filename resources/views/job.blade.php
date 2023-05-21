@@ -49,7 +49,7 @@
                         </div>
                         <div class="col-lg-12 text-center">
                             <div class="rwt-load-more text-center mt--60">
-                                <a class="btn-default" href="blog-grid.html">View More Post
+                                <a class="btn-default" href="/">View More Post
                                     <i class="feather-loader"></i>
                                 </a>
                             </div>
