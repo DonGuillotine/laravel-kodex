@@ -7,7 +7,7 @@
                     <h1 class="title theme-gradient h2">Jobberman</h1>
                     <ul class="page-list">
                         <li class="rn-breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="rn-breadcrumb-item active">Blog Grid</li>
+                        <li class="rn-breadcrumb-item active">Dynamic Page</li>
                     </ul>
                 </div>
             </div>
