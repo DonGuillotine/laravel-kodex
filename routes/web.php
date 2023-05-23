@@ -49,5 +49,5 @@ Route::get('/posts/{id}', function($id){
 // Routing: Testing Search Params
 Route::get('/search', function(Request $request){
     // Whatever that was passed on the url
-    return $request->name . ' ' . $request->age;
+    return $request->name . ' ' . $request->email;
 });
