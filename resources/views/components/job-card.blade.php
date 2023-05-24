@@ -11,13 +11,7 @@
                     <li class="separator">/</li>
                     <li>10 Dec 2021</li>
                 </ul>
-                <div class="inner mt--20">
-                    <div class="tagcloud">
-                        <a href="#">Corporate</a>
-                        <a href="#">Agency</a>
-                        <a href="#">Creative</a>
-                    </div>
-                </div>
+                
                 <h4 class="title"><a href="/single_job/{{ $job['id'] }}">{{ $job->title }}</a></h4>
             </div>
         </div>
