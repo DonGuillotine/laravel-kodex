@@ -10,7 +10,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="content text-center">
                         <div class="page-title">
-                            <h1 class="theme-gradient">{{ $single_job['title'] }}</h1>
+                            <h1 class="theme-gradient">{{ $single_job->title }}</h1>
                         </div>
                         <ul class="rn-meta-list">
                             <li>
@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="content">
-                        <p>{{ $single_job['description'] }}</p>
+                        <p>{{ $single_job->description }}</p>
                     </div>
                 </div>
             </div>
