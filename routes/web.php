@@ -25,6 +25,8 @@ Route::get('/', function () {
 });
 
 // Display A Single Job
+
+// Introduction to Route Model Binding
 Route::get('/single_job/{jobberman}', function(Jobs $jobberman){
     return view('single_job', [
         'single_job' => $jobberman
