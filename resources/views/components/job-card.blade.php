@@ -11,8 +11,8 @@
                     <li class="separator">/</li>
                     <li>10 Dec 2021</li>
                 </ul>
-                
-                <h4 class="title"><a href="/single_job/{{ $job['id'] }}">{{ $job->title }}</a></h4>
+                <x-job-tags :tagsCsv="$job->tags" />
+                <h4 class="title"><a href="/single_job/{{ $job->id }}">{{ $job->title }}</a></h4>
             </div>
         </div>
     </div>
