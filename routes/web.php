@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\JobController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Jobs;
@@ -17,21 +18,12 @@ use App\Models\Jobs;
 
 
 // Display All Jobs
-Route::get('/', function () {
-    return view('job', [
-        'heading' => 'Latest Jobs',
-        'jobs' => Jobs::all()
-    ]); 
-});
+Route::get('/', [JobController::class, 'index']);
+
 
 // Display A Single Job
-
 // Introduction to Route Model Binding
-Route::get('/single_job/{one_job}', function(Jobs $one_job){
-    return view('single_job', [
-        'single_job' => $one_job
-    ]);
-});
+Route::get('/single_job/{one_job}', [JobController::class, 'show']);
 
 
 // Routing: to return a response
