@@ -34,6 +34,10 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="content">
                         <p>{{ $single_job->description }}</p>
+                        <div class="category-meta">
+                            <span class="text">Tags:</span>
+                            <x-job-tags :tagsCsv="$single_job->tags" />
+                        </div>
                     </div>
                 </div>
             </div>
