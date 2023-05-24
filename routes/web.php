@@ -25,9 +25,9 @@ Route::get('/', function () {
 });
 
 // Display A Single Job
-Route::get('/single_job/{id}', function($id){
+Route::get('/single_job/{jobberman}', function(Jobs $jobberman){
     return view('single_job', [
-        'single_job' => Jobs::find($id)
+        'single_job' => $jobberman
     ]);
 });
 
