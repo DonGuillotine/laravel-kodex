@@ -21,7 +21,7 @@
                         <div class="col-lg-12">
                             <div class="row row--15">
                                 @foreach($jobs as $job)
-                                    
+                                    <x-job-card :job="$job" />
                                 @endforeach
                             </div>
                         </div>
