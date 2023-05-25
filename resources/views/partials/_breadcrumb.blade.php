@@ -1,4 +1,4 @@
- <!-- Start Breadcarumb area  -->
+ <!-- Start Breadcrumb area  -->
  <div class="breadcrumb-area breadcarumb-style-1 ptb--120">
     <div class="container">
         <div class="row">
@@ -14,4 +14,4 @@
         </div>
     </div>
 </div>
-<!-- End Breadcarumb area  -->
+<!-- End Breadcrumb area  -->
