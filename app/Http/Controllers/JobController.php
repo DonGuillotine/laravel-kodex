@@ -15,7 +15,7 @@ class JobController extends Controller
         ]); 
     }
 
-    // Show single job
+    // Show single job->Using Route Model Binding
     public function show(Jobs $one_job){
         return view('single_job', [
             'single_job' => $one_job
