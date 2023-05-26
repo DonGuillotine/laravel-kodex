@@ -9,14 +9,14 @@ class JobController extends Controller
 {
     // Show all Jobs
     public function index(){
-        return view('job', [
+        return view('jobberman.index', [
             'jobs' => Jobs::all()
         ]); 
     }
 
     // Show single job->Using Route Model Binding
     public function show(Jobs $one_job){
-        return view('single_job', [
+        return view('jobberman.show', [
             'single_job' => $one_job
         ]);
     }
