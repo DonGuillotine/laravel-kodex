@@ -15,6 +15,7 @@
 
         <!-- Start Rn Blog Area  -->
         <div class="main-content">
+            @include('partials._search')
             <div class="rn-blog-area rn-section-gap">
                 <div class="container">
                     <div class="row mt_dec--30">
