@@ -20,4 +20,16 @@ class JobController extends Controller
             'single_job' => $one_job
         ]);
     }
+
+
+    // Standard Naming Conventions
+    // index - Displaying all Jobs
+    // show - Display a single job
+    // create - Create a new job
+    // store - Store a Job
+    // edit - Edit a Job
+    // update - Update a Job
+    // destroy - delete a job
+
+    
 }
