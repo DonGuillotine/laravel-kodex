@@ -9,8 +9,9 @@ class JobController extends Controller
 {
     // Show all Jobs
     public function index(){
+        // dd(request()->tag);
         return view('jobberman.index', [
-            'jobs' => Jobs::all()
+            'jobs' => Jobs::latest()->get()
         ]); 
     }
 
