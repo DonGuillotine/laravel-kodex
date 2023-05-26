@@ -11,7 +11,7 @@ class JobController extends Controller
     public function index(){
         // dd(request()->tag);
         return view('jobberman.index', [
-            'jobs' => Jobs::latest()->get()
+            'jobs' => Jobs::latest()->filter(request(['tag']))->get()
         ]); 
     }
 
