@@ -10,7 +10,6 @@ class JobController extends Controller
     // Show all Jobs
     public function index(){
         return view('job', [
-            'heading' => 'Latest Jobs',
             'jobs' => Jobs::all()
         ]); 
     }
