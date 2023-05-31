@@ -27,6 +27,10 @@ class JobController extends Controller
         return view('jobberman.create');
     }
 
+    public function store(Request $request){
+        dd($request->all());
+    }
+
 
     // Standard Naming Conventions
     // index - Displaying all Jobs
