@@ -15,6 +15,7 @@
         <div class="row mt--40 row--15 justify-content-center">
             <div class="col-lg-6">
                 <form class="contact-form-1 rwt-dynamic-form" id="contact-form" method="POST" action="">
+                    @csrf
                     <div class="form-group">
                         <input type="text" name="company" placeholder="Company Name">
                     </div>
@@ -26,7 +27,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input type="url" name="website" placeholder="Website URL">
+                        <input type="text" name="website" placeholder="Website URL">
                     </div>
 
                     <div class="form-group">

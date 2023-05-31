@@ -21,13 +21,18 @@ use App\Models\Jobs;
 Route::get('/', [JobController::class, 'index']);
 
 
-
 // Create new Job View
 Route::get('/single_job/create', [JobController::class, 'create']);
+
+
+// Store A Job
+Route::post('/jobberman', [JobController::class, 'store']);
+
 
 // Display A Single Job
 // Introduction to Route Model Binding
 Route::get('/single_job/{one_job}', [JobController::class, 'show']);
+
 
 // Routing: to return a response
 Route::get('/hello', function(){
