@@ -14,27 +14,31 @@
 
         <div class="row mt--40 row--15 justify-content-center">
             <div class="col-lg-6">
-                <form class="contact-form-1 rwt-dynamic-form" id="contact-form" method="POST" action="https://rainbowit.net/html/doob/mail.php">
+                <form class="contact-form-1 rwt-dynamic-form" id="contact-form" method="POST" action="">
                     <div class="form-group">
-                        <input type="text" name="contact-name" id="contact-name" placeholder="Your Name">
+                        <input type="text" name="company" placeholder="Company Name">
                     </div>
                     <div class="form-group">
-                        <input type="text" name="contact-phone" id="contact-phone" placeholder="Phone Number">
+                        <input type="text" name="title" placeholder="Job Title">
                     </div>
                     <div class="form-group">
-                        <input type="email" id="contact-email" name="contact-email" placeholder="Your Email">
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Your Subject">
+                        <input type="text" name="location" placeholder="Job Location">
                     </div>
 
                     <div class="form-group">
-                        <textarea name="contact-message" id="contact-message" placeholder="Your Message"></textarea>
+                        <input type="url" name="website" placeholder="Website URL">
                     </div>
 
                     <div class="form-group">
-                        <button name="submit" type="submit" id="submit" class="btn-default btn-large rn-btn">
+                        <input type="text" name="tags" placeholder="Tags (Comma Seperated Values)">
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="description" placeholder="Job Description"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button name="submit" type="submit" class="btn-default btn-large rn-btn">
                             <span>Submit Now</span>
                         </button>
                     </div>
