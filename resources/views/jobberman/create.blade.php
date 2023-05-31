@@ -19,6 +19,9 @@
                         <div  class="contact-form-1 rwt-dynamic-form">
                             <div class="form-group">
                                 <input type="text" name="company" placeholder="Company Name">
+                                @error('company')
+                                    <p class="text-danger mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
                             <div class="form-group">
                                 <input type="text" name="title" placeholder="Job Title">
