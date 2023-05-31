@@ -14,36 +14,38 @@
 
         <div class="row mt--40 row--15 justify-content-center">
             <div class="col-lg-6">
-                <form class="contact-form-1 rwt-dynamic-form" id="contact-form" method="POST" action="">
-                    @csrf
-                    <div class="form-group">
-                        <input type="text" name="company" placeholder="Company Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="title" placeholder="Job Title">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="location" placeholder="Job Location">
-                    </div>
+                    <form method="POST" action="/submit_job">
+                        @csrf
+                        <div  class="contact-form-1 rwt-dynamic-form">
+                            <div class="form-group">
+                                <input type="text" name="company" placeholder="Company Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="title" placeholder="Job Title">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="location" placeholder="Job Location">
+                            </div>
 
-                    <div class="form-group">
-                        <input type="text" name="website" placeholder="Website URL">
-                    </div>
+                            <div class="form-group">
+                                <input type="text" name="website" placeholder="Website URL">
+                            </div>
 
-                    <div class="form-group">
-                        <input type="text" name="tags" placeholder="Tags (Comma Seperated Values)">
-                    </div>
+                            <div class="form-group">
+                                <input type="text" name="tags" placeholder="Tags (Comma Seperated Values)">
+                            </div>
 
-                    <div class="form-group">
-                        <textarea name="description" placeholder="Job Description"></textarea>
-                    </div>
+                            <div class="form-group">
+                                <textarea name="description" placeholder="Job Description"></textarea>
+                            </div>
 
-                    <div class="form-group">
-                        <button name="submit" type="submit" class="btn-default btn-large rn-btn">
-                            <span>Submit Now</span>
-                        </button>
-                    </div>
-                </form>
+                            <div class="form-group">
+                                <button name="submit" type="submit" class="btn-default btn-large rn-btn">
+                                    <span>Submit Now</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
             </div>
         </div>
     </div>

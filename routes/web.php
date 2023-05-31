@@ -26,7 +26,7 @@ Route::get('/single_job/create', [JobController::class, 'create']);
 
 
 // Store A Job
-Route::post('/jobberman', [JobController::class, 'store']);
+Route::post('/submit_job', [JobController::class, 'store']);
 
 
 // Display A Single Job
