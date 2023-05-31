@@ -22,6 +22,11 @@ class JobController extends Controller
         ]);
     }
 
+    // Show Create Job Page
+    public function create(){
+        return view('jobberman.create');
+    }
+
 
     // Standard Naming Conventions
     // index - Displaying all Jobs
