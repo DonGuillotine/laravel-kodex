@@ -6,14 +6,14 @@
         <div class="row">
             <div class="col-lg-12 mb--40">
                 <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                    <h4 class="subtitle "><span class="theme-gradient">Contact Form</span></h4>
-                    <h2 class="title w-600 mb--20">Our Contact Address Here.</h2>
+                    <h4 class="subtitle "><span class="theme-gradient">@lang('Create a Job')</span></h4>
+                    <h2 class="title w-600 mb--20">@lang('We help you find best hires!')</h2>
                 </div>
             </div>
         </div>
 
-        <div class="row mt--40 row--15">
-            <div class="col-lg-7">
+        <div class="row mt--40 row--15 justify-content-center">
+            <div class="col-lg-6">
                 <form class="contact-form-1 rwt-dynamic-form" id="contact-form" method="POST" action="https://rainbowit.net/html/doob/mail.php">
                     <div class="form-group">
                         <input type="text" name="contact-name" id="contact-name" placeholder="Your Name">
@@ -39,11 +39,6 @@
                         </button>
                     </div>
                 </form>
-            </div>
-            <div class="col-lg-5 mt_md--30 mt_sm--30">
-                <div class="google-map-style-1">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14554259.179133086!2d-105.54385245388013!3d37.49334218664659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1630777307491!5m2!1sen!2sbd" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
             </div>
         </div>
     </div>
