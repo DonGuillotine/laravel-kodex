@@ -126,7 +126,7 @@
                         </div>
                         <div class="col-lg-4 col-md-4" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
                             <div class="call-to-btn text-left mt_sm--20 text-lg-right">
-                                <a class="btn-default" href="">Find Job
+                                <a class="btn-default" href="/single_job/create">Create Job
                                     <i class="feather-arrow-right"></i>
                                 </a>
                             </div>
