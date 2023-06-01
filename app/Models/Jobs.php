@@ -9,6 +9,8 @@ class Jobs extends Model
 {
     use HasFactory;
 
+    protected $fillable =
+
     public function scopeFilter($query, array $filters){
         // ?? Null Coalescing operator
         if($filters['tag'] ?? false){
