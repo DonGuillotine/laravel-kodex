@@ -52,6 +52,9 @@
 
                             <div class="form-group">
                                 <textarea name="description" placeholder="Job Description"></textarea>
+                                @error('description')
+                                    <p class="text-danger mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
 
                             <div class="form-group">
