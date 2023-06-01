@@ -9,7 +9,7 @@ class Jobs extends Model
 {
     use HasFactory;
 
-    protected $fillable =
+    protected $fillable = ['title', 'company', 'location', 'website', 'email', 'description', 'tags'];
 
     public function scopeFilter($query, array $filters){
         // ?? Null Coalescing operator
