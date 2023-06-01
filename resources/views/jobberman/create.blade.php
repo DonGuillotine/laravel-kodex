@@ -45,6 +45,9 @@
 
                             <div class="form-group">
                                 <input type="text" name="tags" placeholder="Tags (Comma Seperated Values)">
+                                @error('tags')
+                                    <p class="text-danger mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
 
                             <div class="form-group">
