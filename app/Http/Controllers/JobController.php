@@ -39,6 +39,8 @@ class JobController extends Controller
             'tags' => 'required',
             'description' => 'required'
         ]);
+
+        Jobs::create($formFields);
     }
 
 
