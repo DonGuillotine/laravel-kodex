@@ -25,6 +25,9 @@
                             </div>
                             <div class="form-group">
                                 <input type="text" name="title" placeholder="Job Title">
+                                @error('title')
+                                    <p class="text-danger mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
                             <div class="form-group">
                                 <input type="text" name="location" placeholder="Job Location">
