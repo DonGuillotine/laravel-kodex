@@ -38,6 +38,9 @@
 
                             <div class="form-group">
                                 <input type="text" name="website" placeholder="Website URL">
+                                @error('website')
+                                    <p class="text-danger mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
 
                             <div class="form-group">
