@@ -22,7 +22,7 @@
                                 10 Dec 2021
                             </li>
                         </ul>
-                        <div class="thumbnail alignwide mt--60"><img class="w-100 radius" src="{{ asset('images/blog-grid/blog-01.jpg') }}" alt="Blog Images"></div>
+                        <div class="thumbnail alignwide mt--60"><img class="w-100 radius" src="{{ $single_job->logo ? asset('storage/' . $single_job->logo) : asset('images/blog-grid/blog-01.jpg') }}" alt="Blog Images"></div>
                     </div>
                 </div>
             </div>
