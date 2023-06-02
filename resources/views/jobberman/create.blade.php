@@ -14,7 +14,7 @@
 
         <div class="row mt--40 row--15 justify-content-center">
             <div class="col-lg-6">
-                    <form method="POST" action="/submit_job">
+                    <form method="POST" action="/submit_job" enctype="multipart/form-data">
                         @csrf
                         <div  class="contact-form-1 rwt-dynamic-form">
                             <div class="form-group">
@@ -53,6 +53,13 @@
                             <div class="form-group">
                                 <input type="text" name="tags" placeholder="Tags (Comma Seperated Values)" value="{{ old('tags') }}">
                                 @error('tags')
+                                    <p class="text-danger mt-1">{{ $message }}</p>
+                                @enderror
+                            </div>
+
+                            <div class="form-group">
+                                <input type="file" name="logo" placeholder="Company Logo">
+                                @error('logo')
                                     <p class="text-danger mt-1">{{ $message }}</p>
                                 @enderror
                             </div>
