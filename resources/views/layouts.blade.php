@@ -9,6 +9,7 @@
 
     <!-- CSS ============================================ -->
     <link rel="stylesheet" href="{{ asset('css/vendor/bootstrap.min.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/plugins/animation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/plugins/feature.css') }}">
     <link rel="stylesheet" href="{{ asset('css/plugins/magnify.min.css') }}">
@@ -173,6 +174,8 @@
     <!-- End Top To Bottom Area  -->
     <!-- JS
 ============================================ -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.10/dist/sweetalert2.all.min.js"></script>
+    <x-flash-message />
     <script src="{{ asset('js/vendor/modernizr.min.js') }}"></script>
     <script src="{{ asset('js/vendor/jquery.min.js') }}"></script>
     <script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
