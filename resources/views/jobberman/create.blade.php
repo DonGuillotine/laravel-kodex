@@ -18,47 +18,47 @@
                         @csrf
                         <div  class="contact-form-1 rwt-dynamic-form">
                             <div class="form-group">
-                                <input type="text" name="company" placeholder="Company Name">
+                                <input type="text" name="company" placeholder="Company Name" value="{{ old('company') }}">
                                 @error('company')
                                     <p class="text-danger mt-1">{{ $message }}</p>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <input type="text" name="title" placeholder="Job Title">
+                                <input type="text" name="title" placeholder="Job Title" value="{{ old('title') }}"> 
                                 @error('title')
                                     <p class="text-danger mt-1">{{ $message }}</p>
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <input type="text" name="location" placeholder="Job Location">
+                                <input type="text" name="location" placeholder="Job Location" value="{{ old('location') }}">
                                 @error('location')
                                     <p class="text-danger mt-1">{{ $message }}</p>
                                 @enderror
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="website" placeholder="Website URL">
+                                <input type="text" name="website" placeholder="Website URL" value="{{ old('website') }}">
                                 @error('website')
                                     <p class="text-danger mt-1">{{ $message }}</p>
                                 @enderror
                             </div>
 
                             <div class="form-group">
-                                <input type="email" name="email" placeholder="Email Address">
+                                <input type="email" name="email" placeholder="Email Address" value="{{ old('email') }}">
                                 @error('email')
                                     <p class="text-danger mt-1">{{ $message }}</p>
                                 @enderror
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="tags" placeholder="Tags (Comma Seperated Values)">
+                                <input type="text" name="tags" placeholder="Tags (Comma Seperated Values)" value="{{ old('tags') }}">
                                 @error('tags')
                                     <p class="text-danger mt-1">{{ $message }}</p>
                                 @enderror
                             </div>
 
                             <div class="form-group">
-                                <textarea name="description" placeholder="Job Description"></textarea>
+                                <textarea name="description" placeholder="Job Description">{{ old('description') }}</textarea>
                                 @error('description')
                                     <p class="text-danger mt-1">{{ $message }}</p>
                                 @enderror
