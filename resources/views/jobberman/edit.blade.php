@@ -75,7 +75,7 @@
 
                             <div class="form-group">
                                 <button name="submit" type="submit" class="btn-default btn-large rn-btn">
-                                    <span>Submit Now</span>
+                                    <span>Edit Job</span>
                                 </button>
                             </div>
                         </div>
