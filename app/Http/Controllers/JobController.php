@@ -48,6 +48,10 @@ class JobController extends Controller
         return redirect('/')->with('message', 'Submission Successful!');
     }
 
+    public function edit(Jobs $one_job){
+        return view('jobberman.edit', ['job' => $one_job]);
+    }
+
 
     // Standard Naming Conventions
     // index - Displaying all Jobs
