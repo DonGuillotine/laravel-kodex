@@ -53,7 +53,7 @@ class JobController extends Controller
     }
 
     public function update(Request $request, Jobs $one_job){
-        // dd($request->file('logo'));
+        // dd($request->title);
         $formFields = $request->validate([
             'title' => 'required',
             'company' => ['required'],

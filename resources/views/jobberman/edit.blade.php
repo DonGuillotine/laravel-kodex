@@ -14,7 +14,7 @@
 
         <div class="row mt--40 row--15 justify-content-center">
             <div class="col-lg-6">
-                    <form method="POST" action="/edit_job" enctype="multipart/form-data">
+                    <form method="POST" action="/single_job/{{ $job->id }}" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div  class="contact-form-1 rwt-dynamic-form">
