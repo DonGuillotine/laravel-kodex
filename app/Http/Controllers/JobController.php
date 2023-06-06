@@ -72,7 +72,10 @@ class JobController extends Controller
         return back()->with('message', 'Job Updated Successfully!');
     }
 
-    
+    public function delete(Jobs $one_job){
+        $one_job->delete();
+        return redirect('/')->with('message', 'Job Deleted Successfully!');
+    }
 
 
     // Standard Naming Conventions
