@@ -41,9 +41,25 @@
                     </div>
                 </div>
             </div>
+            
+            
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="blog-btn"><a class="btn-default" href="/single_job/{{ $single_job->id }}/edit"><span>Update Job</span></a></div>
+                </div>
+                {{-- <div class="col-md-6">
+                    <div class="blog-btn"><a class="btn-default" href="blog-details.html"><span>SEND
+                                    MESSAGE</span></a></div>
+                </div> --}}
+            </div>
+                
+            
         </div>
     </div>
 </div>
 <!-- End Advance Pricing Area  -->
+
+
 
 @endsection
