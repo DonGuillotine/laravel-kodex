@@ -36,6 +36,9 @@ Route::get('/single_job/{one_job}/edit', [JobController::class, 'edit']);
 // Edit functionality
 Route::put('/single_job/{one_job}', [JobController::class, 'update']);
 
+// Delete functionality
+Route::delete('/single_job/{one_job}', [JobController::class, 'delete']);
+
 
 // Display A Single Job
 // Introduction to Route Model Binding

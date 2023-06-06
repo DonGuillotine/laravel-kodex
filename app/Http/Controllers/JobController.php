@@ -72,6 +72,8 @@ class JobController extends Controller
         return back()->with('message', 'Job Updated Successfully!');
     }
 
+    
+
 
     // Standard Naming Conventions
     // index - Displaying all Jobs
