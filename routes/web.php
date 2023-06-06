@@ -33,6 +33,10 @@ Route::post('/submit_job', [JobController::class, 'store']);
 Route::get('/single_job/{one_job}/edit', [JobController::class, 'edit']);
 
 
+// Edit functionality
+Route::put('/edit_job', [JobController::class, 'update']);
+
+
 // Display A Single Job
 // Introduction to Route Model Binding
 Route::get('/single_job/{one_job}', [JobController::class, 'show']);
