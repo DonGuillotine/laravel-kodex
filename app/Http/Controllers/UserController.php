@@ -34,4 +34,13 @@ class UserController extends Controller
         // 5. Redirect user to home page
         return redirect('/')->with('message', 'User Created Successfully!');
     }
+
+    // Logout user, invalidate the session and regenrateToken
+    public function logout(Request $request){
+        auth()->logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+}
+
 }

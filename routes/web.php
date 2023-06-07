@@ -49,6 +49,10 @@ Route::get('/register', [UserController::class, 'create']);
 Route::post('/users', [UserController::class, 'store']);
 
 
+// Logout User
+Route::get('/logout', [UserController::class, 'logout']);
+
+
 // Display A Single Job
 // Introduction to Route Model Binding
 Route::get('/single_job/{one_job}', [JobController::class, 'show']);
