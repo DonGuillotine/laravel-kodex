@@ -35,18 +35,27 @@
                     </div>
                     <div class="col-lg-9 col-md-6 col-8 position-static">
                         <div class="header-right">
-                            <nav class="mainmenu-nav d-none d-lg-block">
-                                <ul class="mainmenu">
-                                     {{-- AUTH GOES HERE --}}
-                                    <li><a href="/login">Login</a></li>
-                                    <li><a href="/register">Register</a></li>
-                                    {{-- AUTH GOES HERE --}}
-                                </ul>
-                            </nav>
-                            <!-- Start Header Btn  -->
-                            <div class="header-btn"><a class="btn-default btn-small round" href="/">BUY NOW</a></div>
-                            <!-- End Header Btn  -->
-
+                            @auth
+                                <nav class="mainmenu-nav d-none d-lg-block">
+                                        <ul class="mainmenu">
+                                            {{-- AUTH GOES HERE --}}
+                                            <li><a href="javascript:void()">Welcome {{ auth()->user()->name }}</a></li>
+                                            {{-- AUTH GOES HERE --}}
+                                        </ul>
+                                    </nav>
+                                    <!-- Start Header Btn  -->
+                                    <div class="header-btn"><a class="btn-default btn-small round" href="/single_jobs/manage">Manage Jobs</a></div>
+                                <!-- End Header Btn  -->
+                            @else
+                                <nav class="mainmenu-nav d-none d-lg-block">
+                                    <ul class="mainmenu">
+                                        {{-- AUTH GOES HERE --}}
+                                        <li><a href="/login">Login</a></li>
+                                        <li><a href="/register">Register</a></li>
+                                        {{-- AUTH GOES HERE --}}
+                                    </ul>
+                                </nav>
+                            @endauth
                             <!-- Start Mobile-Menu-Bar -->
                             <div class="mobile-menu-bar ml--5 d-block d-lg-none">
                                 <div class="hamberger">
