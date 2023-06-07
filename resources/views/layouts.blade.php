@@ -47,6 +47,7 @@
                                 <!-- Start Header Btn  -->
                                 <div class="header-btn">
                                     <form method="POST" action="/logout">
+                                        @csrf
                                         <button class="btn-default btn-small round">
                                             Logout
                                         </button>

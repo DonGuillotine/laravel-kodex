@@ -50,7 +50,15 @@ Route::post('/users', [UserController::class, 'store']);
 
 
 // Logout User
-Route::get('/logout', [UserController::class, 'logout']);
+Route::post('/logout', [UserController::class, 'logout']);
+
+
+// Show login form
+Route::get('/login', [UserController::class, 'login']);
+
+
+// Log in User
+Route::post('/users/login_user', [UserController::class, 'login_user']);
 
 
 // Display A Single Job
