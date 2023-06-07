@@ -38,8 +38,8 @@
                             <nav class="mainmenu-nav d-none d-lg-block">
                                 <ul class="mainmenu">
                                      {{-- AUTH GOES HERE --}}
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="hi">Login</a></li>
+                                    <li><a href="jj">Register</a></li>
                                     {{-- AUTH GOES HERE --}}
                                 </ul>
                             </nav>

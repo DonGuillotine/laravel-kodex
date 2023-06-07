@@ -40,6 +40,10 @@ Route::put('/single_job/{one_job}', [JobController::class, 'update']);
 Route::delete('/single_job/{one_job}', [JobController::class, 'delete']);
 
 
+// Show registeration from
+Route::get('/register', [UserController::class, 'create']);
+
+
 // Display A Single Job
 // Introduction to Route Model Binding
 Route::get('/single_job/{one_job}', [JobController::class, 'show']);
