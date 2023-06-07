@@ -45,6 +45,10 @@ Route::delete('/single_job/{one_job}', [JobController::class, 'delete']);
 Route::get('/register', [UserController::class, 'create']);
 
 
+// Store a User
+Route::post('/users', [UserController::class, 'store']);
+
+
 // Display A Single Job
 // Introduction to Route Model Binding
 Route::get('/single_job/{one_job}', [JobController::class, 'show']);

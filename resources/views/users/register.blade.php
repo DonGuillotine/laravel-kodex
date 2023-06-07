@@ -37,8 +37,8 @@
                             </div>
 
                             <div class="form-group">
-                                <input type="password" name="confirm_password" placeholder="Confirm Password" value="{{ old('confirm_password') }}">
-                                @error('confirm_password')
+                                <input type="password" name="password_confirmation" placeholder="Confirm Password" value="{{ old('password_confirmation') }}">
+                                @error('password_confirmation')
                                     <p class="text-danger mt-1">{{ $message }}</p>
                                 @enderror
                             </div>
