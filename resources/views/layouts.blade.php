@@ -44,6 +44,15 @@
                                     <!-- Start Header Btn  -->
                                     <div class="header-btn"><a class="btn-default btn-small round" href="/single_jobs/manage">Manage Jobs</a></div>
                                 <!-- End Header Btn  -->
+                                <!-- Start Header Btn  -->
+                                <div class="header-btn">
+                                    <form method="POST" action="/logout">
+                                        <button class="btn-default btn-small round">
+                                            Logout
+                                        </button>
+                                    </form>
+                                </div>
+                                <!-- End Header Btn  -->
                             @else
                                 <nav class="mainmenu-nav d-none d-lg-block">
                                     <ul class="mainmenu">
