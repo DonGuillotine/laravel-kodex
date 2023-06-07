@@ -38,9 +38,7 @@
                             @auth
                                 <nav class="mainmenu-nav d-none d-lg-block">
                                         <ul class="mainmenu">
-                                            {{-- AUTH GOES HERE --}}
                                             <li><a href="javascript:void()">Welcome {{ auth()->user()->name }}</a></li>
-                                            {{-- AUTH GOES HERE --}}
                                         </ul>
                                     </nav>
                                     <!-- Start Header Btn  -->
