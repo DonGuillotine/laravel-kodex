@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\JobController;
+use App\Models\Jobs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Models\Jobs;
+use App\Http\Controllers\JobController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
