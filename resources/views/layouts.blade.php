@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <ul class="mainmenu">
-                    {{-- AUTH GOES HERE --}}
+                    
                     <li><a href="/">Manage Jobs</a></li>
                     <li><a href="">Logout</a></li>
                     {{-- AUTH GOES HERE --}}
