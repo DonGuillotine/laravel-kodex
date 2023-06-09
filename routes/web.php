@@ -23,22 +23,22 @@ Route::get('/', [JobController::class, 'index']);
 
 
 // Create new Job View
-Route::get('/single_job/create', [JobController::class, 'create']);
+Route::get('/single_job/create', [JobController::class, 'create'])->middleware('auth');
 
 
 // Store A Job
-Route::post('/submit_job', [JobController::class, 'store']);
+Route::post('/submit_job', [JobController::class, 'store'])->middleware('auth');
 
 
 // Edit A Job
-Route::get('/single_job/{one_job}/edit', [JobController::class, 'edit']);
+Route::get('/single_job/{one_job}/edit', [JobController::class, 'edit'])->middleware('auth');
 
 
 // Edit functionality
-Route::put('/single_job/{one_job}', [JobController::class, 'update']);
+Route::put('/single_job/{one_job}', [JobController::class, 'update'])->middleware('auth');
 
 // Delete functionality
-Route::delete('/single_job/{one_job}', [JobController::class, 'delete']);
+Route::delete('/single_job/{one_job}', [JobController::class, 'delete'])->middleware('auth');
 
 
 // Show registeration from
@@ -50,7 +50,7 @@ Route::post('/users', [UserController::class, 'store']);
 
 
 // Logout User
-Route::post('/logout', [UserController::class, 'logout']);
+Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
 
 
 // Show login form
@@ -58,7 +58,7 @@ Route::get('/login', [UserController::class, 'login']);
 
 
 // Log in User
-Route::post('/users/login_user', [UserController::class, 'login_user']);
+Route::post('/users/login_user', [UserController::class, 'login_user'])->name('login');
 
 
 // Display A Single Job
