@@ -42,7 +42,7 @@ Route::delete('/single_job/{one_job}', [JobController::class, 'delete'])->middle
 
 
 // Show registeration from
-Route::get('/register', [UserController::class, 'create']);
+Route::get('/register', [UserController::class, 'create'])->middleware('guest');
 
 
 // Store a User
@@ -54,11 +54,11 @@ Route::post('/logout', [UserController::class, 'logout'])->middleware('auth');
 
 
 // Show login form
-Route::get('/login', [UserController::class, 'login']);
+Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
 
 
 // Log in User
-Route::post('/users/login_user', [UserController::class, 'login_user'])->name('login');
+Route::post('/users/login_user', [UserController::class, 'login_user']);
 
 
 // Display A Single Job
