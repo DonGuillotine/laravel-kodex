@@ -43,19 +43,21 @@
             </div>
             
             
-            
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <a class="btn-default btn-close-white btn-extra-large" href="/single_job/{{ $single_job->id }}/edit"><span>Update Job</span></a>
+            @if (auth()->user()->id === $single_job->user_id)
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <a class="btn-default btn-close-white btn-extra-large" href="/single_job/{{ $single_job->id }}/edit"><span>Update Job</span></a>
+                    </div>
+                    <div class="col-md-6">
+                        <form method="POST" action="/single_job/{{ $single_job->id }}">
+                            @csrf
+                            @method('DELETE')
+                            <button class="btn-default btn-extra-large"><span>Delete Job</span></button>
+                        </form>
+                    </div> 
                 </div>
-                <div class="col-md-6">
-                    <form method="POST" action="/single_job/{{ $single_job->id }}">
-                        @csrf
-                        @method('DELETE')
-                        <button class="btn-default btn-extra-large"><span>Delete Job</span></button>
-                    </form>
-                </div> 
-            </div>
+            @endif
+           
                 
             
         </div>
