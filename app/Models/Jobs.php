@@ -29,3 +29,12 @@ class Jobs extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 }
+
+
+// php artisan tinker
+// \App\Models\Jobs::first()
+// \App\Models\Jobs::find(3)
+// \App\Models\Jobs::find(3)->user
+// $user = \App\Models\User::first
+// $user
+// $user->jobs
