@@ -44,6 +44,8 @@ class JobController extends Controller
             $formFields['logo'] = $request->file('logo')->store('logos', 'public');
         }
 
+        $formFields['user_id'] = auth()->id();
+
         Jobs::create($formFields);
         return redirect('/')->with('message', 'Submission Successful!');
     }
