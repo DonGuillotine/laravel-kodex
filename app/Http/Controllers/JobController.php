@@ -56,6 +56,9 @@ class JobController extends Controller
 
     public function update(Request $request, Jobs $one_job){
         // dd($request->title);
+        if($one_job->user_id != auth()->id()){
+            abort(403, 'Unauthorized Access Denied');
+        }
         $formFields = $request->validate([
             'title' => 'required',
             'company' => ['required'],
@@ -75,6 +78,9 @@ class JobController extends Controller
     }
 
     public function delete(Jobs $one_job){
+        if($one_job->user_id != auth()->id()){
+            abort(403, 'Unauthorized Access Denied');
+        }
         $one_job->delete();
         return redirect('/')->with('message', 'Job Deleted Successfully!');
     }
