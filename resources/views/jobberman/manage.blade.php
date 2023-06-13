@@ -58,6 +58,8 @@
                                     </div>
                                 </div>
                             @endforeach
+                        @else
+                        <p class="h2 mt--10 mt--100 text-center text-danger">Jobs you create will appear here 😉</p>
                         @endif
                     </div>
                 </div>
