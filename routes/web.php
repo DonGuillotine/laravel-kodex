@@ -61,6 +61,10 @@ Route::get('/login', [UserController::class, 'login'])->name('login')->middlewar
 Route::post('/users/login_user', [UserController::class, 'login_user']);
 
 
+// Show manage page
+Route::get('single_job/manage', [JobController::class. 'manage'])->middleware('auth');
+
+
 // Display A Single Job
 // Introduction to Route Model Binding
 Route::get('/single_job/{one_job}', [JobController::class, 'show']);
