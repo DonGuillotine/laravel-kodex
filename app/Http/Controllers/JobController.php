@@ -79,6 +79,10 @@ class JobController extends Controller
         return redirect('/')->with('message', 'Job Deleted Successfully!');
     }
 
+    public function manage(){
+        return view('jobberman.manage', ['jobs' => auth()->user()->jobs()->get()]);
+    }
+
 
     // Standard Naming Conventions
     // index - Displaying all Jobs
