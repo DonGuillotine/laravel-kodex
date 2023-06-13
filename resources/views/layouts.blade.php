@@ -42,7 +42,7 @@
                                         </ul>
                                     </nav>
                                     <!-- Start Header Btn  -->
-                                    <div class="header-btn"><a class="btn-default btn-small round" href="/single_jobs/manage">Manage Jobs</a></div>
+                                    <div class="header-btn"><a class="btn-default btn-small round" href="single_job/manage">Manage Jobs</a></div>
                                 <!-- End Header Btn  -->
                                 <!-- Start Header Btn  -->
                                 <div class="header-btn">

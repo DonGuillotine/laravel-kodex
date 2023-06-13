@@ -62,7 +62,7 @@ Route::post('/users/login_user', [UserController::class, 'login_user']);
 
 
 // Show manage page
-Route::get('single_job/manage', [JobController::class. 'manage'])->middleware('auth');
+Route::get('single_job/manage', [JobController::class, 'manage'])->middleware('auth');
 
 
 // Display A Single Job
